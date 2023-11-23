@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  overflow: hidden;
+}
+
+h5 {
+	font-weight: normal;
+	position: absolute;
+	top: 10px;
+	left: 7px;
+	color: #aaa;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+p {
+  position: absolute;
+  margin: 0;
+  top: 20px;
+  right: 20px;
+  color:  #aaa;
+  padding: 0px;
+  text-transform: uppercase;
+}
