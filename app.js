@@ -125,8 +125,8 @@ EvilSquare.prototype.collisionDetect = function() {
 
 			if (distance < this.size + balls[j].size) {
 				balls[j].exist = false;
-				count--;
-        		para.textContent = 'Balls left: ' + count;
+				count++;
+        		para.textContent = 'Score: ' + count;
 			}
 		}
 	}
@@ -142,7 +142,7 @@ function loop()	{
 		var ball = new normalBall();
 		balls.push(ball);
 		count++;
-		para.textContent = 'Balls left: ' + count;
+		para.textContent = 'Score: ' + count;
 	}
 	for(var i=0;i<balls.length;i++) {
 		if (balls[i].exist) {
@@ -161,7 +161,7 @@ function loop()	{
       var ball = new normalBall();
       balls.push(ball);
       count++;
-      para.textContent = 'Balls left: ' + count;
+      para.textContent = 'Score: ' + count;
     }
   }
   requestAnimationFrame(loop);
